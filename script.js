@@ -1,12 +1,11 @@
 
-// const rating = document.getElementById("rate");
-
+var rating = 0;
 const onClick = (event) => {
-  console.log(event.target.innerHTML);
+  rating = event.target.innerHTML;
+  var rate = document.getElementById("rate");
+  rate.innerHTML = rating;
+  console.log(rating);
 }
-//   for (let i = 0; i <= 1; i++);
-
-window.addEventListener('click', onClick);
 
 // Get the modal
 var modal = document.getElementById("modal");
@@ -21,14 +20,14 @@ var span = document.getElementsByClassName("close")[0];
 
 var container = document.getElementById("container");
 
-var button = document.querySelector(".btn");
+// var button = document.querySelector(".btn");
 
-var rate = document.querySelector(".rate");
+var button = document.getElementsByClassName("btn");
 
-
-
-
-
+for (let i = 0; i < button.length; i++) 
+{
+button[i].onclick = onClick;
+}
 
 
 submit.onclick = function() {
@@ -41,11 +40,6 @@ span.onclick = function() {
 }
 
 
-
-// function rate(value) {
-//   rateSpan.innerText = `You selected ${value} out of 5`;
-// }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -55,42 +49,3 @@ window.onclick = function(event) {
 
 
 
-
-// function selectionActive() {
-//   const selection = document.querySelectorAll(".btn");
-
-//   selection.forEach((btn) => {
-//     btn.addEventListener("click", handleClick);
-//   });
-
-//   function handleClick(event) {
-//     const containActive = event.target.classList.contains("active");
-
-//     if (!containActive) {
-//       selection.forEach((btnRemove) => {
-//         btnRemove.classList.remove("active");
-//       });
-//     }
-
-//     event.target.classList.add("active");
-
-//     const value = event.target.value;
-//     selected(value);
-//   }
-// }
-// selectionActive();
-
-// const submit = document.querySelector(".submit");
-// const modal = document.querySelector(".modal");
-// const selectedSpan = document.querySelector(".rate");
-
-// button.addEventListener("click", activeModal);
-
-// function activeModal(event) {
-//   event.preventDefault();
-//   modal.classList.add("active");
-// }
-
-// function selected(value) {
-//   selectedClass.innerText = `You selected ${value} out of 5`;
-// }
