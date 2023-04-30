@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;500&family=Roboto:wght@100;300&display=swap');
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    
+ 
+}
+
+body {
+      background: rgb(0, 0, 0);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      
+     
+     
+
+
+    }
+    /* .main-container {
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: auto;
+      
+    } */
+
+    
+    .container {
+      
+      display: grid;
+      place-items: center;
+    
+      overflow: hidden;
+      height: 400px;
+      width: 400px;
+      border-radius: 10%;
+      /* margin-top: 50%; */
+      background: rgb(24, 32, 40);
+    
+      /* background: linear-gradient(179deg,rgba(116, 153, 253, 0.137) 0%,rgba(9, 9, 37, 0.267) 9%,rgba(12, 12, 92, 0.34) 32%,rgb(53, 53, 53) 99%)} */
+    }
+
+      h2 {
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        font-weight: 100px;
+        display: flex;
+        margin-right: 41%;
+        margin-top: 10%;
+      }
+
+      .paragraph {
+        
+        display: flex;
+        color: rgb(186, 180, 180);
+        margin-right: 10%;
+        padding-left: 30px;
+        margin-top: -5%;
+        font-family:'Roboto', sans-serif; ;
+        font-size: 15px;
+        font-weight: 300px;
+
+      }
+
+
+      .selection {
+        
+        margin-top: 5%;
+        margin-bottom: 10%;
+      }
+
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /*  Buttons for numbers 1 - 5  */
+      #btn-one {
+
+        background-color:   rgba(240, 255, 255, 0.066);
+        color: rgb(176, 175, 175);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        border: none;
+        font-weight: 100px;
+        margin-left: 10px;
+        opacity: 0.9;
+       
+     
+      }
+      
+      #btn-two {
+        background-color:   rgba(240, 255, 255, 0.066);   
+        color: rgb(176, 175, 175);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        border: none;
+        margin-left: 10px;
+        opacity: 0.9;
+
+
+      }
+
+      #btn-three {
+        background-color:   rgba(240, 255, 255, 0.066); 
+        color: rgb(176, 175, 175);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        border: none;
+        margin-left: 10px;
+        opacity: 0.9;
+
+
+      }
+      #btn-four {
+        background-color:   rgba(240, 255, 255, 0.066);   
+        color: rgb(176, 175, 175);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        border: none;
+        margin-left: 10px;
+        opacity: 0.9;
+
+
+      }
+
+      #btn-five {
+        background-color:  rgba(240, 255, 255, 0.066);
+        color: rgb(176, 175, 175);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        border: none;
+        margin-left: 10px;
+        opacity: 0.9;
+
+
+      }
+
+/* Changes the color of the button when its hovered over */
+      #btn-one:hover {
+        background-color:   bisque;
+      }
+
+      #btn-two:hover {
+        background-color:   bisque;
+      }
+
+      #btn-three:hover {
+        background-color:   bisque;
+      }
+      #btn-four:hover {
+        background-color:   bisque;
+      }
+      #btn-five:hover {
+        background-color:   bisque;
+      }
+
+      /* Changes the color of the button whenever the button is clicked */
+      /*  a:visited { ... }
+          a:focus { ... }
+          a:hover { ... }
+          a:active { ... } */
+
+      #btn-one:focus {
+        background-color:  rgb(255, 140, 0);
+        color:rgb(253, 253, 253);
+      }
+
+      #btn-two:focus {
+        background-color:   rgb(255, 140, 0);
+        color:rgb(253, 253, 253);}
+        
+
+      #btn-three:focus {
+        background-color:   rgb(255, 140, 0);
+        color:rgb(253, 253, 253);
+      }
+      #btn-four:focus {
+        background-color:   rgb(255, 140, 0);
+        color:rgb(253, 253, 253);
+      }
+      #btn-five:focus {
+        background-color:   rgb(255, 140, 0);
+        color:rgb(253, 253, 253);
+      }
+
+
+      .submit {
+        font-family: 'Kanit', sans-serif;
+        background-color: rgb(255, 111, 0);
+        color: white;
+        height: 40px;
+        width: 300px;
+        border-top-left-radius: 20px ; 
+        border-top-right-radius: 20px;  
+        border-bottom-left-radius: 20px ;
+        border-bottom-right-radius: 20px ;   
+        margin-bottom: 10% ;  
+        border: none;      
+  
+          }
+/* color change whenever the mouse is hovered over the subit button */
+          .submit:hover {
+            background-color: bisque;
+          }
+/* changes the color of the submit button when clicked */
+          .submit:focus {
+background-color: white;
+color: rgb(255, 111, 0);
+          }
+
+          .star {
+            display: flex;
+            justify-items: flex-start;
+            align-items: center;
+            flex-direction: row;
+            margin-right: 0%;
+            margin-bottom: 20%;
+          }
+
+          .circle {
+            display: flex;
+            justify-items: flex-end;
+            align-items: center;
+            flex-direction: column-reverse;
+            background-color: rgba(240, 255, 255, 0.188);
+            opacity: 0.7;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin-right: 70%;
+            margin-top: 10%;
+          }
+
+          .paragraph2
+          {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 249, 249, 0.683);
+            margin-bottom: 60%;
+          }
+
+          
+          h3 {
+            color: white;}
+
+         
+
+          .image {
+            margin: 5%;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+          }
+
+  .rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color:  rgb(53, 62, 71);
+    font-family: 'Kanit', sans-serif;
+    color: rgb(255, 111, 0);
+    height: 40px;
+    width: 200px;
+    border-top-left-radius: 20px ; 
+    border-top-right-radius: 20px;  
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;   
+    margin-bottom: 10% ;  
+    border: none;      
+    margin: auto;
+    opacity: 0.;
+  }
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+
+
+  overflow: auto;
+  height: 400px;
+  width: 400px;
+  border-radius: 10%;
+  background: rgb(24, 32, 40);
+  animation: slide ease 0.8s;
+  margin: 8%  auto; /* 15% from the top and centered */
+  padding: 30px;
+  border: none;
+  /* width: 34%; Could be more or less, depending on screen size */
+  /* height: 36%; */
+  }
+
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  
