@@ -316,4 +316,13 @@ color: rgb(255, 111, 0);
   cursor: pointer;
 }
 
-  
+  .attribution {
+    color: white;
+  }
+  a:link {
+    color: orangered
+  }
+
+  a:visited {
+    color: orangered;
+  }
